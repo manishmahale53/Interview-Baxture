@@ -25,3 +25,8 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## About Project
+
+Created a module that has two components, a)User-list and b)User-upsert. It has a service file named data for HTTP operations and for sharing data between components. Also created a JSON server to store the data. 
+Used a Bootstrap CSS framework for user interface.
