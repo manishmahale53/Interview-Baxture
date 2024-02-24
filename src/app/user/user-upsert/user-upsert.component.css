@@ -1,0 +1,17 @@
+.form{
+    height: 650px;
+    width: 300px;
+}
+.display{
+    display: flex;
+    justify-content: center;
+}
+.shadow{
+    box-shadow: 1px;
+}
+.show-toast {
+    display: block !important; 
+  }
+.red-font{
+    color: red;
+}

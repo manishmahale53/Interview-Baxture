@@ -1,0 +1,14 @@
+.add-btn{
+    display: flex;
+    justify-content: end;
+}
+.shadow{
+    box-shadow: 1px;
+}
+.show-toast {
+    display: block !important; /* Override display: none */
+  }
+.rounded{
+    border-radius: 100px;
+}
+  

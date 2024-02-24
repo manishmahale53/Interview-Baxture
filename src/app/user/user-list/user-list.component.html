@@ -1,0 +1,47 @@
+<div style="padding: 100px;">
+  <div class="toast align-items-center text-bg-primary border-0 position-absolute top-0 end-0"
+    [ngClass]="{'show-toast': showToast}" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="d-flex">
+      <div class="toast-body">
+        User deleted successfully !!!
+      </div>
+      <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"
+        (click)="hideToast()"></button>
+    </div>
+  </div>
+  <div>
+    <h2>User List</h2>
+  </div>
+  <div class="add-btn">
+    <button class="btn btn-success" (click)="goToAddUser()">Add User</button>
+  </div>
+  <table class="table border rounded shadow">
+    <thead>
+      <tr>
+        <th scope="col">First Name</th>
+        <th scope="col">Last Name</th>
+        <th scope="col">Email</th>
+        <th scope="col">Phone Number</th>
+        <th scope="col">Address</th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of allUsers; let i = index">
+        <th scope="row">{{user.firstName}}</th>
+        <td>{{user.lastName}}</td>
+        <td>{{user.email}}</td>
+        <td>{{user.phone}}</td>
+        <td>{{user.address}}</td>
+        <td>
+          <button class="btn btn-warning" (click)="editUserData(user)">Edit</button>&nbsp;
+          <button class="btn btn-danger" (click)="deleteUserData(user.id)">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+<div>
+
+</div>
